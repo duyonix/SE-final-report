@@ -1,0 +1,29 @@
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+@mixin button($color, $bg-color, $color-hover, $bg-color-hover) {
+  @include text($color, $fs-sm, $fw-bold-1);
+  background-color: $bg-color;
+  border-radius: 20px;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  &:hover {
+    color: $color-hover;
+    background-color: $bg-color-hover;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
+@mixin flex($direction: row, $content: null, $item: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+  flex-wrap: $wrap;
+}

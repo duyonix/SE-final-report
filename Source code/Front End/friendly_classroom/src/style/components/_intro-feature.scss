@@ -1,0 +1,50 @@
+.intro-feature {
+  background-color: #e8fbff;
+  .content {
+    .title {
+      //padding-left: 50px;
+      font-weight: $fw-bold-2;
+      margin-bottom: 30px;
+      padding-top: 30px;
+      color: $color-se-1;
+    }
+    .row {
+      .feature-box {
+        padding: 20px 15px;
+        .inner {
+          background-color: white;
+          @include flex(null, space-evenly, center);
+          border-radius: 25px;
+          box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+          .img-illus {
+            width: auto;
+            height: 150px;
+            margin-right: 20px;
+          }
+          h3 {
+            font-size: $fs-md;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+  }
+  @media only screen and (max-width: 992px) {
+  }
+  @media only screen and (max-width: 768px) {
+    .content .row .feature-box .inner .img-illus {
+      width: 120px;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .content .row .feature-box .inner {
+      padding: 10px;
+    }
+    .content .row .feature-box .inner h3 {
+      font-size: $fs-sm;
+    }
+  }
+}

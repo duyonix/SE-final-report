@@ -1,0 +1,95 @@
+.user-account {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  .avatar-area {
+    @include flex(column, null, center);
+    .btn-changeAvatar {
+      margin-top: 15px;
+    }
+  }
+  #change-avatar {
+    height: fit-content;
+    border-radius: 30%;
+    label {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background: rgb(117, 116, 116);
+      opacity: 0.5;
+    }
+  }
+
+  .info {
+    margin-left: 100px;
+
+    .line {
+      stroke: rgb(105, 105, 105);
+      stroke-width: 1;
+    }
+    .username {
+      font-style: bold;
+      color: dodgerblue;
+    }
+    .infoline {
+      display: flex;
+      .button-edit-info {
+        display: block;
+      }
+      .field-container,
+      .value-container {
+        margin-top: 10px;
+      }
+      .field-container h4,
+      .value-container h4 {
+        font-size: 1.2rem;
+      }
+      .field {
+        color: rgb(136, 133, 133);
+        margin-top: 10px;
+      }
+      .value-field {
+        padding-left: 40px;
+        margin-right: 100px;
+        margin-top: 10px;
+      }
+      .iconedit {
+      }
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    display: block;
+    margin: 15px auto;
+    .info {
+      margin-left: 30px;
+      h2 {
+        text-align: center;
+      }
+      .infoline {
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        .field-container h4,
+        .value-container h4 {
+          font-size: 0.9rem;
+        }
+        .value-field {
+          padding-left: 20px;
+          margin-right: 30px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 430px) {
+    .info {
+      .infoline {
+        .value-field {
+          padding-left: 10px;
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

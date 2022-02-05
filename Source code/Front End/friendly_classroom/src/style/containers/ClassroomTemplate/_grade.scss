@@ -1,0 +1,71 @@
+.grade {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .MuiTablePagination-root {
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+  .header {
+    @include flex(row, space-between, center, null);
+    // border-bottom: 2px solid black;
+    // padding-bottom: 10px;
+
+    .classroom-name {
+      @include button(white, #fc5421, white, #fa5320);
+      display: inline-block;
+      padding: 20px;
+      font-size: $fs-lg;
+      cursor: pointer;
+      font-size: 18px;
+
+      letter-spacing: 3px;
+      // margin-right: 20px;
+      opacity: 90%;
+      max-width: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .wrap-search {
+      @include flex(row, flex-start, center, null);
+      width: 280px;
+    }
+  }
+
+  .header-line {
+    &::after {
+      content: "";
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2)
+      );
+      height: 4px;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      // margin-left: 5px;
+    }
+  }
+
+  .homework-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .header {
+      @include flex(column, center, center, null);
+      .classroom-name {
+        margin-bottom: 10px;
+      }
+      .wrap-search {
+        width: 100%;
+      }
+    }
+  }
+}

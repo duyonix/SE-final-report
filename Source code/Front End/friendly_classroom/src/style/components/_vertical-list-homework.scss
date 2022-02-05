@@ -1,0 +1,44 @@
+.vertical-list-homework.css-ish9js {
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    padding: 0;
+    padding-right: 10px;
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-left: 100px;
+  }
+  @media only screen and (max-width: 992px) {
+    padding-left: 70px;
+    justify-content: space-between;
+    .css-8atqhb {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    padding-left: 40px;
+  }
+  @media only screen and (max-width: 550px) {
+    padding-left: 10px;
+    .css-m87xh2-MuiTabs-root {
+      width: 100%;
+    }
+    display: block;
+    .css-8atqhb {
+      width: 100%;
+      .tab-panel {
+        width: 100% !important;
+      }
+    }
+    .tabAllTopics {
+      width: 100% !important;
+      .css-14ldegz {
+        padding-right: 0;
+      }
+      .box-homework-content {
+        width: 100% !important;
+      }
+    }
+    .css-14ldegz {
+      padding-right: 0;
+    }
+  }
+}

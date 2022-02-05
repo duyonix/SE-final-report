@@ -1,0 +1,45 @@
+.container-todolist{
+    margin: 50px 10% 0 10%;
+    .function-filter{
+        
+    }
+    .data-groups{
+            margin-right: 50px;
+            margin-top: 50px;
+            display:flex;
+            .card-content-exercise{
+                
+                margin-right: 15% ;
+                margin-bottom: 30px;
+                .card-content-exercise-button{
+                    margin-bottom: 30px;
+                    .btn-card{
+                        width:300px
+                    }
+                    .btn-card-first{
+                        width:300px;
+                        margin-top:30px;
+                    }
+                }
+            }
+    }
+    .groups{
+        margin-right: 50px;
+        margin-top: 50px;
+        display:flex;
+        .card-title-length{
+            margin-right: 15% ;
+        }
+        .card-title-length{
+            .card-title{
+                display:flex;
+            }
+        }
+    }
+    h5{
+        text-transform: capitalize;
+    }
+    h6{
+        color:rgb(214, 203, 203);
+    }
+}

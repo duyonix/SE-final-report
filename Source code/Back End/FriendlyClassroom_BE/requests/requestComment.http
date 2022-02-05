@@ -1,0 +1,30 @@
+POST http://localhost:5000/api/61b9fb7a03f03a5ce44be90b/61b9fbc003f03a5ce44be90f/comment
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYjYwMzk4ZjA5OTQ1NDY4OGJmMzUzZSIsInVzZXJuYW1lIjoieWRhbSIsImlhdCI6MTYzOTU3ODQ1MywiZXhwIjoxNjM5NjE0NDUzfQ.S6zPzm9Vbv26qYhhiQawC8S8HMLpZYuOuw2vuueWrDU
+
+{
+    "body": "cho ocn vii zero"
+}
+
+###
+PUT http://localhost:5001/api/61ab5d0864202bccfcbed4de/61ab5ff8de7cb0dfa5043982/comment/61ab6c6c4980ea6deea6f467
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTc5NWYxMjA2ZTgyZDdkNWUxMDA3YSIsInVzZXJuYW1lIjoiZGFtdGhpeHVhbnkiLCJpYXQiOjE2Mzg2MjAzODUsImV4cCI6MTYzODYzODM4NX0.XbHbDHihT68RZqlhitpbjsfbUu76zzQ9i--tBw_QyvY
+
+{
+    "body": "Duy đặng 0"
+}
+
+
+###
+DELETE http://localhost:5001/api/61ab5d0864202bccfcbed4de/61ab5ff8de7cb0dfa5043982/comment/61ab709d1b4c5c4d1b2917e2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTc5NWYxMjA2ZTgyZDdkNWUxMDA3YSIsInVzZXJuYW1lIjoiZGFtdGhpeHVhbnkiLCJpYXQiOjE2Mzg2MjAzODUsImV4cCI6MTYzODYzODM4NX0.XbHbDHihT68RZqlhitpbjsfbUu76zzQ9i--tBw_QyvY
+
+###
+POST http://localhost:5001/api/authorize/login
+Content-Type: application/json
+
+{
+    "username": "damthixuany",
+    "password": "1233456"
+}

@@ -1,0 +1,68 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  position: relative;
+  z-index: 100;
+  img {
+    height: 70px;
+    width: 100%;
+  }
+  .nav-page-item {
+    padding: 0;
+    margin: 0 8px;
+    display: block;
+  }
+  .nav-link {
+    padding: 5px 8px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $color-pr-2;
+      transition: all 0.5s;
+    }
+  }
+  .nav-link-active {
+    color: $color-pr-2;
+    border-bottom: 3px solid $color-pr-2;
+  }
+  .notification {
+    margin-right: 10px;
+    color: black;
+    border-radius: 50%;
+    background-color: #ebebeb;
+  }
+
+  @media only screen and (min-width: 900px) {
+    .nav-page {
+      @include flex(row, center, center, no-wrap);
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding: 0.5rem 5px !important;
+    .css-2uchni {
+      @include flex(row, center, center, null);
+      .notification {
+        margin-right: 4px;
+      }
+    }
+    .css-19r6kue-MuiContainer-root {
+      padding: 0 5px;
+    }
+  }
+}
+
+.nav-page-link-mobile {
+  color: black;
+  text-decoration: none !important;
+  // margin: 0 auto;
+  &:hover {
+    color: $color-pr-2;
+    transition: all 0.5s;
+  }
+}

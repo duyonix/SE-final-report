@@ -1,0 +1,20 @@
+export const UPDATE_HOMEWORK_REQUEST = "updateHomeworkReducer/UPDATE_HOMEWORK_REQUEST";
+export const UPDATE_HOMEWORK_SUCCESS = "updateHomeworkReducer/UPDATE_HOMEWORK_SUCCESS";
+export const UPDATE_HOMEWORK_FAILED = "updateHomeworkReducer/UPDATE_HOMEWORK_FAILED";
+export const UPDATE_HOMEWORK_RESET = "updateHomeworkReducer/UPDATE_HOMEWORK_RESET";
+
+export const UPDATE_HOMEWORK_FILE_REQUEST = "updateHomeworkReducer/UPDATE_HOMEWORK_FILE_REQUEST";
+export const UPDATE_HOMEWORK_FILE_SUCCESS = "updateHomeworkReducer/UPDATE_HOMEWORK_FILE_SUCCESS";
+export const UPDATE_HOMEWORK_FILE_FAILED = "updateHomeworkReducer/UPDATE_HOMEWORK_FILE_FAILED";
+export const UPDATE_HOMEWORK_FILE_RESET = "updateHomeworkReducer/UPDATE_HOMEWORK_FILE_RESET";
+
+export const UPDATE_DOCUMENT_REQUEST = "updateDocumentReducer/UPDATE_DOCUMENT_REQUEST";
+export const UPDATE_DOCUMENT_SUCCESS = "updateDocumentReducer/UPDATE_DOCUMENT_SUCCESS";
+export const UPDATE_DOCUMENT_FAILED = "updateDocumentReducer/UPDATE_DOCUMENT_FAILED";
+export const UPDATE_DOCUMENT_RESET = "updateDocumentReducer/UPDATE_DOCUMENT_RESET";
+
+export const UPDATE_DOCUMENT_FILE_REQUEST = "updateDocumentReducer/UPDATE_DOCUMENT_FILE_REQUEST";
+export const UPDATE_DOCUMENT_FILE_SUCCESS = "updateDocumentReducer/UPDATE_DOCUMENT_FILE_SUCCESS";
+export const UPDATE_DOCUMENT_FILE_FAILED = "updateDocumentReducer/UPDATE_DOCUMENT_FILE_FAILED";
+export const UPDATE_DOCUMENT_FILE_RESET = "updateDocumentReducer/UPDATE_DOCUMENT_FILE_RESET";
+

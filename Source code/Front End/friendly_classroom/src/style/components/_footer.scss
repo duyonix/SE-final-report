@@ -1,0 +1,57 @@
+.footer {
+  background-color: #e8fbff;
+  //border: 1px solid #3e413e;
+  // box-shadow: rgba(86, 86, 105, 0.25) 0px 10px 20px -12px inset,
+  //   rgba(146, 120, 120, 0.3) 0px 18px 36px -18px inset;
+  .content {
+    padding: 30px;
+    padding-top: 50px;
+    .logo {
+      img {
+        height: 70px;
+        width: auto;
+      }
+    }
+    li {
+      list-style: none;
+    }
+    .general {
+      padding-left: 40px;
+      h3 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+    }
+    .address {
+      @include flex(column, center, center, null);
+      ul {
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+    .contact {
+      h3 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      ul {
+        @include flex(row, space-evenly, center);
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .general {
+      @include flex(column, center, center, null);
+    }
+    padding-top: 0;
+    .div-4:first-child,
+    .div-4:nth-child(2) {
+      border-bottom: 2px solid $color-se-3;
+      margin-bottom: 20px;
+    }
+  }
+}

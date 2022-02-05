@@ -1,0 +1,40 @@
+.about-us {
+  padding-bottom: 50px;
+  .about-title {
+    padding: 30px 0;
+    @include flex(column, center, center, wrap);
+    h1 {
+      margin-bottom: 20px;
+      .group-name {
+        color: $color-pr-3;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .about-member {
+    width: 100%;
+    margin-top: 60px;
+
+    @include flex(row, null, null, null);
+  }
+  .about-thank {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    width: 60%;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 50px auto;
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 15px;
+  }
+  @media only screen and (max-width: 768px) {
+    .about-member {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}

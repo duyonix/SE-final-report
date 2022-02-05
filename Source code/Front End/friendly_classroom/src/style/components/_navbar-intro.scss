@@ -1,0 +1,83 @@
+#navbar-intro {
+  position: sticky;
+  padding: 10px 20px;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  opacity: 0.9;
+  left: 0;
+  z-index: 100;
+  font-family: $font-title !important;
+  box-shadow: 0 0 10px 0 #0000005e;
+  .logo {
+    img {
+      height: 70px;
+      width: auto;
+    }
+  }
+  .container {
+    width: 100%;
+    padding: 5px 0;
+    @include flex(row, space-between);
+  }
+  .navbar {
+    padding: 0;
+    ul {
+      li {
+        margin: 5px;
+        a.nav-link {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: $fw-bold-2;
+          &:hover {
+            color: $color-hv-1 !important;
+            transition: all 0.1s linear;
+          }
+          &:active {
+            color: $color-pr-1 !important;
+          }
+        }
+      }
+      li.active {
+        .nav-link {
+          color: $color-pr-1 !important;
+        }
+      }
+    }
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    .account {
+      .btn-signin {
+        @include button(white, $color-pr-2, white, $color-pr-1);
+        margin-right: 10px;
+      }
+      .btn-signup {
+        @include button(white, rgb(44, 185, 108), white, rgb(3, 110, 51));
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1199px) {
+  }
+  @media only screen and (max-width: 991px) {
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 5px 7px !important;
+  }
+  @media only screen and (max-width: 551px) {
+    .logo img {
+      height: 50px;
+    }
+    .navbar-right .account .btn {
+      padding: 5px;
+      margin-bottom: 5px;
+      font-size: 11px;
+    }
+    .navbar-toggler-icon {
+      margin-right: 5px;
+      width: 50px;
+    }
+  }
+}

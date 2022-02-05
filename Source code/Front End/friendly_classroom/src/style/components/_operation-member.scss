@@ -1,0 +1,102 @@
+.operation-member {
+  @include flex(row, space-between, center, null);
+  padding: 25px 15px !important;
+  margin-left: -20px;
+
+  .classname {
+    @include button(white, #fc5421, white, #fa5320);
+    // display: inline-block;
+    padding: 20px;
+    font-size: $fs-xl;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-right: 20px;
+    font-size: 18px;
+    opacity: 90%;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .input-group {
+    width: 68%;
+    margin-left: -20px;
+  }
+  #idFind {
+    height: auto;
+    width: 6.5%;
+    margin-left: -5px;
+    z-index: 9;
+  }
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+  .MuiInputBase-input.css-1x5jdmq {
+    //padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+  .MuiFormControl-root.MuiTextField-root.css-i44wyl {
+    width: 93.5%;
+  }
+  .btn-add {
+    @include button(white, #0857f5, white, #0341b9);
+    height: fit-content;
+    //margin-left: -10px;
+    cursor: pointer;
+    margin-left: -25px;
+    margin-right: 30px;
+  }
+  @media only screen and (max-width: 1200px) {
+  }
+  @media only screen and (max-width: 992px) {
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+    .MuiFormControl-root.MuiTextField-root.css-i44wyl {
+      width: 80.5%;
+    }
+    #idFind {
+      width: 50px;
+    }
+    .input-group {
+      margin-left: -10px;
+    }
+    .classname {
+      margin-right: 5px;
+    }
+    .btn-add {
+      margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    justify-content: space-between !important;
+    .input-group {
+      justify-content: flex-end;
+      width: 50%;
+      margin-right: 10px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .btn-add {
+      margin-left: 5px;
+      font-size: 12px;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .classname {
+      padding: 10px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    #idFind {
+      width: 35px;
+    }
+    .input-group {
+      width: 70%;
+    }
+    .MuiSvgIcon-fontSizeMedium {
+      width: 16px;
+    }
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+    .MuiFormControl-root.MuiTextField-root.css-i44wyl {
+      width: 70.5%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+export const FETCH_ALL_POST_REQUEST = "postReducer/FETCH_ALL_POST_REQUEST";
+export const FETCH_ALL_POST_SUCCESS = "postReducer/FETCH_ALL_POST_SUCCESS";
+export const FETCH_ALL_POST_FAILED = "postReducer/FETCH_ALL_POST_FAILED";
+
+export const FETCH_SINGLE_POST_REQUEST = "postReducer/FETCH_SINGLE_POST_REQUEST";
+export const FETCH_SINGLE_POST_SUCCESS = "postReducer/FETCH_SINGLE_POST_SUCCESS";
+export const FETCH_SINGLE_POST_FAILED = "postReducer/FETCH_SINGLE_POST_FAILED";
+
+export const CREATE_POST_REQUEST = "postReducer/CREATE_POST_REQUEST";
+export const CREATE_POST_SUCCESS = "postReducer/CREATE_POST_SUCCESS";
+export const CREATE_POST_FAILED = "postReducer/CREATE_POST_FAILED";
+export const CREATE_POST_RESET = "postReducer/CREATE_POST_RESET";
+
+export const UPDATE_POST_REQUEST = "postReducer/UPDATE_POST_REQUEST";
+export const UPDATE_POST_SUCCESS = "postReducer/UPDATE_POST_SUCCESS";
+export const UPDATE_POST_FAILED = "postReducer/UPDATE_POST_FAILED";
+export const UPDATE_POST_RESET = "postReducer/UPDATE_POST_RESET";
+
+export const DELETE_POST_REQUEST = "postReducer/DELETE_POST_REQUEST";
+export const DELETE_POST_SUCCESS = "postReducer/DELETE_POST_SUCCESS";
+export const DELETE_POST_FAILED = "postReducer/DELETE_POST_FAILED";
+export const DELETE_POST_RESET = "postReducer/DELETE_POST_RESET";
+
+
+

@@ -1,0 +1,4 @@
+Nhóm em đã deploy cả 2 phần Front End và Back End lên 2 nền tảng heroku và vercel, cụ thể:
+
+- Front End: https://friendlyclassroom.vercel.app/
+- Back End: https://friendlyclassroom-server.herokuapp.com/

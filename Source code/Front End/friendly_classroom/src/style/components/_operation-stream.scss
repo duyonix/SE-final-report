@@ -1,0 +1,135 @@
+.operation-stream {
+  @include flex(row, space-between, baseline, null);
+  padding: 30px;
+  .classname {
+    @include button(white, #fc5421, white, #fa5320);
+    // display: inline-block;
+    padding: 20px;
+    font-size: $fs-xl;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-right: 20px;
+    font-size: 18px;
+    opacity: 90%;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .share {
+    margin-right: 40px;
+    height: 150px;
+    width: 1000px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    .shareWrapper {
+      padding: 10px;
+    }
+
+    .shareTop {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      margin-left: 20px;
+      .shareInput {
+        padding-left: 10px;
+        border: none;
+      }
+      .shareInput:focus {
+        outline: none;
+      }
+    }
+    .shareHr {
+      margin: 20px;
+    }
+
+    .shareBottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .shareButton {
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        background-color: green;
+        font-weight: 500;
+        margin-right: 20px;
+        cursor: pointer;
+        color: white;
+      }
+      .cancelButton {
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        background-color: gray;
+        font-weight: 500;
+        margin-right: 20px;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+  @media only screen and (max-width: 944px) {
+    padding: 30px 10px !important;
+  }
+  @media only screen and (max-width: 768px) {
+  }
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .classname {
+      margin-bottom: 30px;
+    }
+    .share {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+.posts-container {
+  display: flex;
+
+  //padding: 20px 10% 20px 10%;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+  .posts-list {
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    margin-left: 125px;
+    width: 1000px;
+  }
+  @media only screen and (max-width: 944px) {
+    .posts-poster {
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+    .posts-list {
+      margin-left: 50px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    .posts-poster {
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+    .posts-list {
+      margin-left: 20px;
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .posts-list {
+      margin-left: 10px;
+      width: 90%;
+    }
+  }
+}

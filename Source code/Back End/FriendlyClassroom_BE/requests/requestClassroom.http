@@ -1,0 +1,92 @@
+# tạo lớp
+
+POST http://localhost:5000/api/classroom/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYjYwMzk4ZjA5OTQ1NDY4OGJmMzUzZSIsInVzZXJuYW1lIjoieWRhbSIsImlhdCI6MTYzOTU3ODQ1MywiZXhwIjoxNjM5NjE0NDUzfQ.S6zPzm9Vbv26qYhhiQawC8S8HMLpZYuOuw2vuueWrDU
+
+{
+    "name": "test lớp",
+    "description": "lop hoc cua ý đàm"
+}
+
+# tham gia lớp
+###
+
+PUT http://localhost:5000/api/classroom/join
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYjYyNjhjNGMyMzQyNDdhY2RkY2M3YyIsInVzZXJuYW1lIjoiaHZ1IiwiaWF0IjoxNjM5MzI3MzgzLCJleHAiOjE2MzkzNjMzODN9.LVyHW7D4bCdjTKiCDueY0PHU_e75tk7JC1WxcJH5Xh0
+
+{
+    "code": "0cbt1h"
+}
+###
+
+# remove student khỏi lớp
+PUT http://localhost:5000/api/61adf0f4cf5efc346cc0f0a0/removeStudent
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYWRlZGFlMDk0NTgzMGQ3NDBkNWJiOSIsInVzZXJuYW1lIjoiaGllbnZpMTIzIiwiaWF0IjoxNjM4Nzk0MzI2LCJleHAiOjE2Mzg4MzAzMjZ9.qlrOSj1q2r5SRnBgF9LZmQs3hzq0_Rls9Sn12TwbzO8
+
+{
+    "studentId": "61aded65b3fe7d0ce46ca962"
+}
+###
+# get info lớp
+GET http://localhost:5000/api/61adf0f4cf5efc346cc0f0a0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYWUyOGVlN2JjZTdiNDE5ODAxNWVhYiIsInVzZXJuYW1lIjoieWRhbTEyMzQ1NiIsImlhdCI6MTYzODgwMzkyMywiZXhwIjoxNjM4ODM5OTIzfQ.YK7J3oU8greswz6hBvcWNo9dIRMZiTBhCPN3RMdvrmY
+###
+
+# get people trong lớp
+GET http://localhost:5000/api/61b626df62bac61398469f35/people
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYjYyNjhjNGMyMzQyNDdhY2RkY2M3YyIsInVzZXJuYW1lIjoiaHZ1IiwiaWF0IjoxNjM5MzI3MzgzLCJleHAiOjE2MzkzNjMzODN9.LVyHW7D4bCdjTKiCDueY0PHU_e75tk7JC1WxcJH5Xh0
+###
+
+# edit info lớp
+PUT http://localhost:5000/api/61ab5d0864202bccfcbed4de
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYWUyOGVlN2JjZTdiNDE5ODAxNWVhYiIsInVzZXJuYW1lIjoieWRhbTEyMzQ1NiIsImlhdCI6MTYzODgwMzcxMywiZXhwIjoxNjM4ODM5NzEzfQ.6AUTj0eqDnZMzVxM9Q47IPJxY9qJR51Nx4HfrNtMHTg
+
+{
+    "description": "lớp học của ý đàm"
+}
+###
+# xóa lớp
+DELETE http://localhost:5000/api/61aa4541f34150f813a7dd5c
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTc5NWYxMjA2ZTgyZDdkNWUxMDA3YSIsInVzZXJuYW1lIjoiZGFtdGhpeHVhbnkiLCJpYXQiOjE2Mzg1NDczMzgsImV4cCI6MTYzODU1MDkzOH0.3KyFGdM1rXSjdO7ElazmsyNqe59U-Wv_uY-B5Ab9xSM
+
+
+###
+
+###
+POST http://localhost:5000/api/authorize/signup
+Content-Type: application/json
+
+{
+    "username": "hvu",
+    "password": "123",
+    "email": "hvu@gmail.com",
+    "fullName": "Hoangvu",
+    "phoneNumber": "0831113332"
+}
+
+
+###
+POST http://localhost:5000/api/authorize/login
+Content-Type: application/json
+
+{
+    "username": "hvu",
+    "password": "123"
+}
+
+
+###
+
+POST http://localhost:5000/api/authorize/login
+Content-Type: application/json
+
+{
+    "username": "ydam",
+    "password": "123"
+}
+
+###

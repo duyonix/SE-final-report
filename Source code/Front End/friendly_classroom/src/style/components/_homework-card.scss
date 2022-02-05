@@ -1,0 +1,84 @@
+.homework-card {
+  margin: 10px 0 20px;
+  height: 100%;
+  .info {
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+
+    .detail {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  .hw-name {
+    color: $color-pr-3;
+    font-size: $fs-md;
+    font-weight: $fw-bold-1;
+  }
+
+  .hw-deadline,
+  .hw-createdAt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #6f7071;
+  }
+  .btn-change {
+    @include button(white, #fc5421, white, #fa5320);
+    margin-right: 7px;
+  }
+  .btn-detail {
+    @include button(white, #413ef5, white, #460aec);
+  }
+
+  .More {
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    @include flex(null, space-between, center);
+    .desc {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    a {
+      animation: flickerAnimation 1.5s infinite;
+    }
+    a:hover {
+      color: #fa5320;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+  }
+  @media only screen and (max-width: 992px) {
+    .info .detail {
+      display: block;
+    }
+    .hw-deadline,
+    .hw-createdAt {
+      position: relative;
+      display: block;
+      padding-bottom: 10px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+  }
+  @media only screen and (max-width: 550px) {
+    .btn-change {
+      margin: 10px 5px;
+    }
+  }
+}
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

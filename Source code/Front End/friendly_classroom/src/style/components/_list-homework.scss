@@ -1,0 +1,21 @@
+.list-homework {
+  .notification-nothing {
+    margin: 20px auto;
+    color: $color-pr-2;
+    text-align: center;
+  }
+  @media only screen and (max-width: 992px) {
+    .box-homework-content {
+      width: 100% !important;
+    }
+    .css-13xfq8m-MuiTabPanel-root {
+      padding: 30px 12px;
+    }
+  }
+
+  @media only screen and (max-width: 578px) {
+    .css-13xfq8m-MuiTabPanel-root {
+      padding: 20px 5px;
+    }
+  }
+}

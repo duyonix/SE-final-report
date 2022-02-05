@@ -1,0 +1,17 @@
+.classroom-card {
+  border-radius: 15px !important;
+  position: relative;
+  .option-menu {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 10px;
+  }
+  .link-classroom {
+    text-decoration: none;
+    color: inherit;
+  }
+  .classroom-card-info {
+    @include flex(row, flex-end, center, wrap);
+  }
+}

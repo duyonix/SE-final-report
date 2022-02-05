@@ -1,0 +1,90 @@
+.homework-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .header {
+    @include flex(row, space-between, center, null);
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+
+    .classroom-name {
+      @include button(white, #fc5421, white, #fa5320);
+      // display: inline-block;
+      padding: 20px;
+      font-size: $fs-lg;
+      cursor: pointer;
+      font-size: 18px;
+
+      letter-spacing: 3px;
+      // margin-right: 20px;
+      opacity: 90%;
+      max-width: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .btn-add {
+      padding: 12px 24px;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+    .input-box {
+      display: flex;
+      align-items: baseline;
+      .icon-input {
+        margin: 5px 7px 5px 0;
+      }
+    }
+    .left {
+      // border-right: 2px solid black;
+      padding-bottom: 10px;
+      .drop-zone {
+        font-size: 20px !important;
+        @include flex(column, center, center);
+      }
+      .files {
+        max-width: calc(100% - 40px) !important;
+      }
+
+      .card {
+        .btn-delete-file {
+          &:focus-visible {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+    .right {
+      .input-label {
+        padding-bottom: 5px;
+        font-weight: 600;
+      }
+      .MuiFormControl-root.MuiTextField-root {
+        width: 100% !important;
+      }
+      .css-1s2u09g-control,
+      .css-1pahdxg-control {
+        padding: 10px 3px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .content {
+      .left {
+        border-right: 2px solid black;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .card {
+      img,
+      .card-subtitle {
+        display: none;
+      }
+    }
+  }
+}

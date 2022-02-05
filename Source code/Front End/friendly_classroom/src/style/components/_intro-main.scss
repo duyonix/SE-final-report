@@ -1,0 +1,64 @@
+.intro-main {
+  @include flex();
+  padding: 20px 0 !important;
+
+  .left {
+    padding-left: 50px;
+    @include flex(column, center, flex-start);
+    width: 50%;
+    .title {
+      font-weight: $fw-bold-2;
+      margin-bottom: 30px;
+    }
+    .des {
+      color: #6f7071;
+      //font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .btn-join {
+      @include button(white, $color-pr-2, white, $color-pr-1);
+      .fa-hand-pointer {
+        font-size: $fs-md;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+    .img-study {
+      width: 80%;
+      display: block;
+      margin: 30px auto;
+    }
+    //background-image: url("assets/img/intro_study.png");
+  }
+  @media only screen and (max-width: 1200px) {
+  }
+  @media only screen and (max-width: 992px) {
+  }
+  @media only screen and (max-width: 768px) {
+    .left {
+      width: 60%;
+      padding-left: 20px;
+    }
+    .left .title {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .right {
+      width: 40%;
+    }
+    .right .img-study {
+      margin: 10px auto;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .left {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+}

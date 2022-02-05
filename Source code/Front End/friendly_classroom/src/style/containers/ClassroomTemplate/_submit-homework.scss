@@ -1,0 +1,201 @@
+.submit-homework {
+  //margin-left: 30px !important;
+  .logo-class {
+    padding: 60px 50px;
+    .classname {
+      @include button(white, #fc5421, white, #fa5320);
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: $fs-xl;
+      cursor: pointer;
+      letter-spacing: 3px;
+      margin-right: 50px;
+      opacity: 90%;
+    }
+  }
+  .content {
+    padding-left: 50px;
+    padding-bottom: 50px;
+    @include flex(row, space-between, flex-start, null);
+    .homework-detail {
+      width: 40%;
+      @include flex(null, null, null);
+      .name {
+        color: $color-pr-2;
+        font-size: $fs-xl;
+        font-weight: $fw-bold-2;
+        margin-bottom: 40px;
+      }
+      .detail {
+        margin-left: 30px;
+        @include flex(column, space-between, null, null);
+        p {
+          font-size: 20px;
+          letter-spacing: 2px;
+          margin: 0;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .submit {
+      @include flex(column, space-between, null, null);
+      position: relative;
+
+      font-size: 22px;
+      width: 45%;
+      .header {
+        @include flex(row, space-between, null, null);
+        font-weight: bold;
+
+        .incomplete {
+          color: #fa5320;
+        }
+        .complete {
+          color: rgb(2, 173, 24);
+        }
+      }
+      .btn-add {
+        @include button(rgb(11, 11, 238), #f9f7fd, rgb(11, 11, 238), #f9f7fd);
+        border: 1px solid #54535563;
+        font-size: 20px;
+      }
+      .btn-mark {
+        @include button(white, #0857f5, white, #2063e9);
+        font-size: 20px;
+      }
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 2rem;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: #399953;
+        background-repeat: no-repeat;
+        background-size: 50% 50%, 50% 50%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(#399953, #399953),
+          linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
+          linear-gradient(#377af5, #377af5);
+        // animation: rotate 5s linear infinite;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 6px;
+        top: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background: white;
+        border-radius: 5px;
+      }
+    }
+    .drop-zone {
+      font-size: 20px !important;
+      @include flex(column, center, center);
+      .up-arrow {
+        background: url("https://courses.fit.hcmus.edu.vn/theme/image.php/academi/theme/1639241394/fp/dnd_arrow")
+          center no-repeat;
+        width: 100%;
+        height: 80px;
+
+        top: 5px;
+      }
+    }
+    .card {
+      .btn-delete-file {
+        &:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    //border-bottom: 1px solid #665d5c;
+  }
+  @media only screen and (max-width: 1400px) {
+    .content {
+      padding-right: 20px;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+  }
+  @media only screen and (max-width: 768px) {
+    .content {
+      padding-left: 10px;
+      .homework-detail {
+        .name {
+          font-size: 25px;
+        }
+        .detail {
+          margin-left: 12px;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+      .submit {
+        font-size: 16px;
+        width: 52%;
+      }
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .logo-class {
+      padding: 40px 10px;
+    }
+    .logo-class .classname {
+      font-size: 25px;
+      padding: 20px 25px;
+    }
+    .content {
+      display: block;
+      .homework-detail {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px;
+        img {
+          height: 80px;
+        }
+        .name {
+          font-size: 22px;
+        }
+        .detail {
+          margin-left: 12px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .submit {
+        padding: 18px;
+        font-size: 14px;
+        width: 100%;
+        h4 {
+          text-align: left !important;
+          font-size: 12px !important;
+        }
+        .btn-add {
+          font-size: 14px;
+        }
+      }
+      .drop-zone {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
